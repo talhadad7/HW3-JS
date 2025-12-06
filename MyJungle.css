@@ -1,0 +1,84 @@
+.Main{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+body {
+    background-image: url("images/JungleBackground.jpg"); 
+    background-size: cover;    
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+h1{
+    font-family:"Titan one";
+    font-weight: 100;
+}
+.Animal-container {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin : 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+.Animal-container:hover, .Animal-container.playing{
+    transform: scale(1.05);
+}
+.Animal-container img {
+        width: 15vw;   
+    height: 15vw;  
+    max-width: 140px;
+    max-height: 140px;
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 10px;
+    border: 10px solid rgb(25, 111, 126);
+}
+.Animal-container p {
+position:absolute;
+top: 50%;
+left: 50%;
+color: white;
+font-weight: bold;
+font-weight:50;
+font-family:"Titan one";
+font-size: 2vw;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+.titan-one-regular {
+  font-family: "Titan One", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+}
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    font-family: "Titan One", sans-serif;
+    background-color: #548a3b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* @media(max-width: 500px){
+.Main{
+    flex-direction:column;
+    
+}
+} */
+

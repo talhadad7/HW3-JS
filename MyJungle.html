@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wdth,wght@130,100..900&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MyJungle.css">
+
+    <title>Tal'sJungle</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Jungle</h1>
+    <button id="Welcome" type="button" class="btn btn-outline-success">Welcome!</button>
+    </header>
+    <div class = "Main">
+        <div id = "Elephant" class="Animal-container" data-sound="sounds/ElephantSound.mp3" data-key = "e">
+            <p>E</p>
+            <img src = "images/ElephantPic.jpg" alt = "Elephant Image">
+        </div>
+        <div id = "Lion" class="Animal-container" data-sound="sounds/LionSound.mp3" data-key ="l">
+            <p> L</p>
+            <img src = "images/LionPics.jpg" alt = "Lion Image" >
+        </div>
+        <div id="Frog" class="Animal-container" data-sound="sounds/CrazyFrogSound.mp3" data-key="c">
+            <p>C</p>
+            <img src="images/CrazyFrog.png" alt="Crazy Frog">
+        </div>
+        <div id="Monkey" class="Animal-container" data-sound="sounds/JulianSound.mp3" data-key="j">
+            <p>J</p>
+            <img src="images/Julian.png" alt="King Julian Picture">
+        </div>
+        <div id="Fox" class="Animal-container" data-sound="sounds/FoxSound.mp3" data-key="f">
+            <p>F</p>
+            <img src="images/Fox.jpg" alt="Fox Image">
+        </div>
+        <div id="Rooster" class="Animal-container" data-sound="sounds/RoosterSound.mp3" data-key="r">
+            <p>R</p>
+            <img src="images/Rooster.jpg" alt="Rooster Image">
+        </div>
+        <div id="Goat" class="Animal-container" data-sound="sounds/GoatSound.mp3" data-key="g">
+            <p>G</p>
+            <img src="images/Goat.jpg" alt="Goat Image">
+        </div>
+    </div>
+    <audio id="welcomeMusic" src="sounds/Welcome.mp3"></audio>
+<script src="script.js"></script>
+
+
+</body>
+<footer>
+    <p>© 2025 Tal Hadad</p>
+</footer>
+</html>
