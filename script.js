@@ -22,11 +22,23 @@
     });
     
     document.querySelectorAll(".Animal-container").forEach(container=>{
-         const audio = new Audio(container.dataset.sound);
+        const audio = new Audio(container.dataset.sound);
+        let isPlaying = false;
+
         container.addEventListener("click",()=>{
+           if (!isPlaying) {
             audio.play();
+            isPlaying = true;
+           }
+            else {
+            audio.pause();
+            audio.currentTime = 0;
+            isPlaying = false;
+        }
         })
-       
+        audio.addEventListener("ended", () => {
+        isPlaying = false;
+    });
     })
 
     document.addEventListener("keydown",(event)=>{
